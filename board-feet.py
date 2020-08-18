@@ -48,7 +48,7 @@ class ReusableForm(Form):
             else:
                 flash('Error: All form fields required')
 
-        return render_template('boards.html', ThickVal=1)
+        return render_template('boards.html')
 
 
 if __name__ == '__main__':
