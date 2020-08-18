@@ -1,1 +1,1 @@
-web: gunicorn text:app
+web: gunicorn board-feet:app
