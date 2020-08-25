@@ -18,7 +18,6 @@ class ReusableForm(Form):
     @app.route('/', methods=['POST', 'GET'])
     def CalculateNum(*args, **kwargs):
         form = ReusableForm(request.form)
-        session["form"] = form
         print(form.errors)
         if request.method != 'POST':
             global Sum, total
