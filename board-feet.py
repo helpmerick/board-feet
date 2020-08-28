@@ -28,7 +28,7 @@ class ReusableForm(Form):
             LengthVal = request.form['LengthVal']
             WidthVal = request.form['WidthVal']
             ThickVal = request.form['ThickVal']
-            print(LengthVal, " ", WidthVal, " ", ThickVal)
+            print(LengthVal, " ", WidthVal, " ", ThickVal, " ")
             if form.validate():
                 total = total
 
