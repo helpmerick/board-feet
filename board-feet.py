@@ -2,6 +2,7 @@ from flask import Flask, redirect, url_for, request, render_template, flash, ses
 from wtforms import Form, StringField, SubmitField, FloatField, validators
 from flask_wtf import FlaskForm
 import os
+from werkzeug.serving import run_simple
 
 DEBUG = True
 app = Flask(__name__)
@@ -52,4 +53,4 @@ class ReusableForm(Form):
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    run_simple('localhost', 8080, app, use_reloader=True)
